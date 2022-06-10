@@ -1,4 +1,4 @@
-
+BotAmino
 flask
 json_minify
 websocket-client==0.57.0
