@@ -1,10 +1,2 @@
-BotAmino
-aiohttp
-flask
-json_minify
 websocket-client==0.57.0
-requests
-translate
-names
-secmail
-bs4
+aminofix
