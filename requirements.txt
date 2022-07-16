@@ -1,2 +1,3 @@
 amino.fix
 BotAmino
+websocket-client==1.3.1
