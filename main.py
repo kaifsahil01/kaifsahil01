@@ -14,7 +14,7 @@ def setw(args):
         args.subClient.set_welcome_message(reply_message)
     args.subClient.send_message(args.chatId, "Welcome wall message changed")
 print("started...")
-@client.command("hello",condition=is_staff)
+@client.command("hello")
 def hello(data):
 	data.subClient.send_message(data.chatId, message="""
 hello
