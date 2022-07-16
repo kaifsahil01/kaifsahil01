@@ -43,15 +43,15 @@ time.sleep(10)
 print("Bot started")
 #socket
 client.launch(True)
+client.launch(True)
 def socketRoot():
-	j=0
-	while True:
-		if j>=300:
-			print("Updating socket.......")
-			client.close()
-			client.start()
-			print("Socket updated")
-			j=0
-		j=j+1
-		time.sleep(1)
+ j=0
+ while True:
+  if j>=100:
+   print("Updating socket.......")
+   os.execv(sys.executable, ['python'] + sys.argv)
+   print("Socket updated")
+   j=0
+  j=j+1
+  time.sleep(1)
 socketRoot()
