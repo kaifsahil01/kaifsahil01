@@ -1,3 +1,4 @@
+import os
 import aminofix
 from BotAmino import *
 from BotAmino import BotAmino
