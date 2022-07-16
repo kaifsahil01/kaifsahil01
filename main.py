@@ -19,8 +19,23 @@ def hello(data):
 	data.subClient.send_message(data.chatId, message="""
 hello
 """)
+#@client.on_all()
+def on_message(data) -> None:
+    content = data.message
+    mtype = data.info.message.type
+    if mtype != 0 and content and str(data.info.comId):
+        data.subClient.kick(chatId=data.chatId, userId=data.authorId, allowRejoin=False)
+        data.subClient.send_message(data.chatId, f'Anti-Raid-Bot : MessageType {mtype} detected! Nickname: {data.author} | userId: {data.authorId} | messageId: {data.messageId}.')
+        data.subClient.delete_message(data.chatId, data.messageId, asStaff=True, reason=f'Anti-Raid-Bot : MessageType {mtype} detected! Nickname: {data.author} | userId: {data.authorId} | messageId: {data.messageId}.')
+        return
+        try:
+            data.subClient.ban(data.authorId, f'Anti-Raid-Bot : MessageType {mtype} detected! Nickname: {data.author} | userId: {data.authorId} | messageId: {data.messageId}.')
+        except Exception:
+            pass    
 
-client.launch("true")
+client.launch(True)
+client.activity = "True"
+
 ################################################commands/команды################################################
 time.sleep(10)
 print("Bot started")
