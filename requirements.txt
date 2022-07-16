@@ -1,3 +1,2 @@
 amino.fix
 BotAmino
-sys
