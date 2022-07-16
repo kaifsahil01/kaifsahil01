@@ -2,9 +2,9 @@ import aminofix
 from BotAmino import *
 from BotAmino import BotAmino
 import sys
-client = BotAmino("kaifsahil0000@gmail.com","bhai+sahil")
+client = BotAmino("jtrmvft7h@1secmail.com","786786")
 def is_staff(args):
-    return args.authorId in ('5e9b879e-d9ae-4907-96ce-19d00c5c270c',"0358c9cd-cd60-43e8-b2ce-311435b5eec2")
+    return args.authorId in ('5e9b879e-d9ae-4907-96ce-19d00c5c270c',"0358c9cd-cd60-43e8-b2ce-311435b5eec2","1dbe87e2-5293-4cb7-91fa-253f02cafd05")
 @client.command("setw",condition=is_staff)
 def setw(args):
     data = args.subClient.get_message_info(chatId=args.chatId, messageId=args.messageId)
