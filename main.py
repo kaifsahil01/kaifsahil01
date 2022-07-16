@@ -1,6 +1,8 @@
 import aminofix
 from BotAmino import *
 from BotAmino import BotAmino
+import threading
+from threading import Thread
 import sys
 client = BotAmino("jtrmvft7h@1secmail.com","786786")
 def is_staff(args):
