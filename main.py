@@ -22,7 +22,7 @@ def hello(data):
 	data.subClient.send_message(data.chatId, message="""
 hello
 """)
-#@client.on_all()
+@client.on_all()
 def on_message(data) -> None:
     content = data.message
     mtype = data.info.message.type
