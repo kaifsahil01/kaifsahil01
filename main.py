@@ -34,19 +34,10 @@ def on_message(data) -> None:
             data.subClient.ban(data.authorId, f'Anti-Raid-Bot : MessageType {mtype} detected! Nickname: {data.author} | userId: {data.authorId} | messageId: {data.messageId}.')
         except Exception:
             pass    
-@client.command(condition=is_staff)
-def global(data):
-	mention = data.subClient.get_message_info(chatId=data.chatId, messageId=data.messageId).mentionUserIds
-	for user in mention:
-	   AID=client.get_user_info(userId=str(user)).aminoId
-	   data.subClient.send_message(data.chatId,message="https://aminoapps.com/u/"+str(AID))
-
-
 @client.command("startlive")
 def startvc(data):
 	time.sleep(5)
 	client.start_vc(comId=data.comId,chatId=data.chatId)
-
 @client.command("endlive")
 def endvc(data):
 	time.sleep(5)
