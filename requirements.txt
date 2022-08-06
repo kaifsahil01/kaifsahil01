@@ -1,4 +1,5 @@
 samino
+amino.fix
 pyfiglet
 colored
 ujson
