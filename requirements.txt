@@ -1,4 +1,4 @@
-samino
+samino==2.1.7
 amino.fix
 pyfiglet
 colored
