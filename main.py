@@ -1,3 +1,5 @@
+import os
+from os import sys
 import samino
 from time import sleep
 from os import path
