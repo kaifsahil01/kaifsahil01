@@ -1,3 +1,4 @@
 samino
 os
 pyfiglet
+colored
