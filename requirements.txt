@@ -1,2 +1,2 @@
-amino.fix
-BotAmino
+samino
+aminofix
