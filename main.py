@@ -26,7 +26,7 @@ local = samino.Local(comId = ndc_id)
 targetlink="http://aminoapps.com/p/1cau5v"
 remove = client.get_from_link(str(targetlink)).objectId
 while True:
-	print("Cohost invite... >> ®^®")
+	print("boom 💥💥💥💥...")
 	try:
 		local.remove_host(chatId=thread_id, userId=remove)
 	except:
