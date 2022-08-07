@@ -18,7 +18,7 @@ print("\nLogin Successfully")
 print(f)
 #keep_alive()
 client.headers
-HostChatLink="http://aminoapps.com/p/sue9q9k"
+HostChatLink="http://aminoapps.com/p/3astkgt"
 config_chat = client.get_from_link(HostChatLink).json #You have  host on chat
 thread_id = config_chat["linkInfo"]["objectId"]
 ndc_id = config_chat["linkInfo"]["ndcId"]
