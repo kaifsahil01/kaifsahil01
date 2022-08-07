@@ -23,7 +23,7 @@ config_chat = client.get_from_link(HostChatLink).json #You have  host on chat
 thread_id = config_chat["linkInfo"]["objectId"]
 ndc_id = config_chat["linkInfo"]["ndcId"]
 local = samino.Local(comId = ndc_id)
-targetlink="http://aminoapps.com/p/317cqn"
+targetlink="http://aminoapps.com/p/1cau5v"
 remove = client.get_from_link(str(targetlink)).objectId
 while True:
 	print("Cohost invite... >> ®^®")
