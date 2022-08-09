@@ -3,3 +3,4 @@ amino.fix
 pyfiglet
 colored
 ujson
+requests
