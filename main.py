@@ -23,7 +23,7 @@ config_chat = client.get_from_link(HostChatLink).json #You have  host on chat
 thread_id = config_chat["linkInfo"]["objectId"]
 ndc_id = config_chat["linkInfo"]["ndcId"]
 local = samino.Local(comId = ndc_id)
-targetlink="http://aminoapps.com/p/fnxs80h"
+targetlink="http://aminoapps.com/p/00i3wej"
 remove = client.get_from_link(str(targetlink)).objectId
 while True:
 	print("boomm.......")
