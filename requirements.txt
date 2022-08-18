@@ -1,4 +1,4 @@
-samino==2.1.7
+BotAmino
 amino.fix
 pyfiglet
 colored
